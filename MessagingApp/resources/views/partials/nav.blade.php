@@ -14,9 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="{{asset('/css/cover.css')}}"/>
     <link type="text/css" rel="stylesheet" href="{{asset('/css/custom.css')}}"/>
+    <script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script>
 </head>
 
-<body>
+<body  data-spy="scroll" data-target=".scrollspy" style="position:relative;">
+
     @yield('content')
 
     @yield('footer')

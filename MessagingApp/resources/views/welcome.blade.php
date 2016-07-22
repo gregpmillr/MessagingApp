@@ -14,16 +14,18 @@
                     <div class="inner">
                         <h3 class="masthead-brand">Cover</h3>
                         <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+                            <div class="scrollspy">
+                                <ul class="nav masthead-nav">
+                                    <li class="active"><a href="#home">Home</a></li>
+                                    <li><a href="#features">Features</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </div>
 
-                <div class="inner cover">
+                <div class="inner cover" id="home">
                     <h1 class="cover-heading">Business Messaging </h1>
                     <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
                     <p class="lead">
@@ -41,7 +43,7 @@
 
 
     <!-- Columns of text -->
-    <div class="container marketing">
+    <div class="container marketing" id="features">
 
         <!-- Three columns of text below -->
         <div class="row voffset6">
