@@ -8,3 +8,82 @@
 .voffset7 { margin-top: 80px; }
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
+
+/************ Navigation Controls ***************/
+
+/* Actual navbar */
+.navbar-translucent
+{
+    opacity:0;
+}
+
+
+/**************** Buttons *******************/
+.btn.main:hover
+{
+    background-color: darkorchid;
+    color: white;
+    border-color: darkorchid;
+}
+
+
+#navbar.opaque
+{
+
+    background-color: rgba(255,255,255,1);
+    transition: background-color 1s ease 0s, height 0.35s;
+    color: black;
+}
+
+
+
+
+.animation-element {
+    opacity: 0;
+    position: relative;
+}
+
+.animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: all 1300ms linear;
+    -webkit-transition: all 1300ms linear;
+    -o-transition: all 1300ms linear;
+    transition: all 1300ms linear;
+    -moz-transform: translate3d(150px, 0px, 0px);
+    -webkit-transform: translate3d(150px, 0px, 0px);
+    -o-transform: translate(150px, 0px);
+    -ms-transform: translate(150px, 0px);
+    transform: translate3d(150px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+.animation-element.slide-right {
+    opacity: 0;
+    -moz-transition: all 2000ms linear;
+    -webkit-transition: all 2000ms linear;
+    -o-transition: all 2000ms linear;
+    transition: all 2000ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-right.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}

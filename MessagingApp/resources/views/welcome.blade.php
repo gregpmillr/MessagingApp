@@ -2,15 +2,13 @@
 
 @section('content')
 
-
-
     <div class="site-wrapper">
 
         <div class="site-wrapper-inner">
 
             <div class="cover-container">
 
-                <div class="masthead clearfix">
+                <div class="masthead clearfix navbar-translucent" id="navbar">
                     <div class="inner">
                         <h3 class="masthead-brand">Cover</h3>
                         <nav>
@@ -25,11 +23,15 @@
                     </div>
                 </div>
 
-                <div class="inner cover" id="home">
-                    <h1 class="cover-heading">Business Messaging </h1>
+                <div class="inner cover animation-element slide-right animation-text-block-1" id="home">
+                    <h1 class="cover-heading">Business Messaging</h1>
                     <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+                </div>
+
+                <div class="inner cover">
                     <p class="lead">
-                        <a href="#" class="btn btn-lg btn-default">Check it out!</a>
+                        <a href="#" class="btn btn-lg btn-default main animation-element slide-left animation-button-1">Check it out!</a>
                     </p>
                 </div>
 
