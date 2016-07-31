@@ -59,7 +59,7 @@
 
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
+                <h2>How does it work?</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
@@ -98,7 +98,6 @@
 
     <div class="container">
 
-
         <div class="row">
 
             <div class="col-sm-12 col-md-7 col-lg-7  ">
@@ -114,9 +113,38 @@
             </div>
 
         </div>
+
+        <div class="voffset9"></div>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 ">
+                <hr style="border-color:darkgray">
+            </div>
+        </div>
     </div>
 
+    <div class="voffset9"></div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                <img src="/imgs/Twilio_logo_red.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                <br> <h3>The <b>BEST</b> SMS platform used.</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="voffset6"></div>
+            <a href="#" class="btn-lg btn-success main">Get Started!</a>
+        </div>
+    </div>
+
+    <div class="voffset9"></div>
 
 
 @stop

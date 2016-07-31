@@ -19,11 +19,17 @@
 
 
 /**************** Buttons *******************/
+.btn.main
+{
+    color: #ffffff;
+    background-color: darkorchid;
+    border-color: darkorchid;
+}
 .btn.main:hover
 {
-    background-color: darkorchid;
+    background-color: #611BBD;
     color: white;
-    border-color: darkorchid;
+    border-color: #611BBD;
 }
 
 
