@@ -40,6 +40,19 @@ function check_if_in_view() {
         $element = $('.animation-text-block-1');
         slideAnimate($element);
 
+        $element = $('.animation-picture-1');
+        slideAnimate($element);
+
+        $element = $('.animation-text-block-2');
+        slideAnimate($element);
+
+        $element = $('.animation-picture-2');
+        slideAnimate($element);
+
+        $element = $('.animation-text-block-3');
+        slideAnimate($element);
+
+
     });
 
     function slideAnimate(object){

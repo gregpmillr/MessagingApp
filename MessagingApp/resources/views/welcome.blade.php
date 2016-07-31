@@ -71,11 +71,54 @@
                 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
 
-
         </div>
 
         <div class="voffset6"></div>
+
     </div>
+
+    <div class="voffset9"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-5">
+                <div class="inner cover animation-element-picture slide-right animation-picture-1" id="picture1">
+                    <img src="http://placehold.it/300x300">
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-7  ">
+                <div class="animation-element slide-left animation-text-block-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="voffset9"></div>
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-7 col-lg-7  ">
+                <div class="animation-element slide-right animation-text-block-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-5 col-lg-5">
+                <div class="inner cover animation-element-picture slide-left animation-picture-2" id="picture2">
+                    <img src="http://placehold.it/300x300">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
 @stop
 
 @section('footer')
