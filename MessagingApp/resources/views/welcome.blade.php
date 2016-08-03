@@ -53,22 +53,25 @@
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
                 <h2>What?</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <p>Easy to use, low cost SMS/MMS messaging platform so you can spend less time marketing, and more time selling.</p>
+                <p><a class="btn btn-default" href="#" role="button">Ready to start? &raquo;</a></p>
             </div>
 
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
                 <h2>How?</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>With our highly efficient and easy-to-use application built upon the Twilio framework, we help you expand your business by creating
+                and managing personalized mailing lists for mass text marketing.</p>
                 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
 
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Who?</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <h2>How do I start?</h2>
+                <p>Oh - We're glad you asked! Simply click the button below to start the registration process. If we haven't sold you yet;
+                you haven't seen what we have to offer.<br>
+                <b>You won't be disappointed</b></p>
+                <p><a class="btn btn-default" href="#" role="button">Sign me up! &raquo;</a></p>
             </div>
 
         </div>
@@ -83,9 +86,12 @@
 
         <div class="row">
 
+
+            <div class="container">
+
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                 <div class="inner cover animation-element-picture slide-right animation-picture-1" id="picture1">
-                    <img src="http://placehold.it/300x300">
+                    <img src="/imgs/phone_icon.png">
                 </div>
             </div>
 
@@ -96,7 +102,10 @@
                     </div>
                 </div>
                 <div class="animation-element slide-left animation-text-block-2">
-                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text-left">
+                        Sign up, add to your mailing list, think of an awesome one-liner, maybe add a delicious picture in your message
+                        to catch their attention, click. Continue with your regular schedule - <b>We handle the rest.</b>
+                    </p>
                 </div>
             </div>
 
@@ -114,17 +123,19 @@
             <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-push-4 col-sm-push-5 col-md-push-0 col-lg-push-0">
                     <div class="animation-element slide-right-quick animation-text-block-3_1 pull-left">
-                        <h2>Lorem Ipsum!</h2><br>
+                        <h2>Creative Marketing</h2><br>
                     </div>
                 </div>
                 <div class="animation-element slide-right animation-text-block-3">
-                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text-left">How useful would it be to have an <b>easily manageable</b> mailing list of customers for distributing promotions?
+                    With our application platform - We make it extremely simple for you. We're here to assist you with expanding your business by
+                    attracting new customers and reaching higher customer return rates using our simple SMS and MMS messaging software! </p>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-5 col-lg-5">
                 <div class="inner cover animation-element-picture slide-left animation-picture-2" id="picture2">
-                    <img src="http://placehold.it/300x300">
+                    <img src="/imgs/chat_bubble_icon.png">
                 </div>
             </div>
 
@@ -150,7 +161,7 @@
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                <br> <h3>The <b>BEST</b> SMS platform used.</h3>
+                <br> <h3>Using the <b>BEST</b> SMS platform available.</h3>
             </div>
         </div>
 
