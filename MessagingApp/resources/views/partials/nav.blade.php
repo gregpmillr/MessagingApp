@@ -17,6 +17,7 @@
     <link type="text/css" rel="stylesheet" href="{{asset('/css/custom.css')}}"/>
     <script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script>
     <script type="text/javascript" src="{{URL::asset('/js/home.js')}}"></script>
+
 </head>
 
 <body  data-spy="scroll" data-target=".scrollspy" style="position:relative;">

@@ -188,3 +188,16 @@
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
 }
+
+
+
+
+.modal-dialog{
+    width:70%;
+}
+
+.modal-body > .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
