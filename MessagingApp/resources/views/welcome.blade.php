@@ -2,48 +2,6 @@
 
 @section('content')
 
-    <div class="site-wrapper">
-
-        <div class="site-wrapper-inner" id="home">
-
-            <div class="cover-container">
-
-                <div class="masthead clearfix navbar-translucent" id="navbar">
-                    <div class="inner">
-                        <h3 class="masthead-brand"><a href="#home">Twilio</a></h3>
-                        <nav>
-                            <div class="scrollspy">
-                                <ul class="nav masthead-nav">
-                                    <li class="active"><a href="#home">Home</a></li>
-                                    <li><a href="#features">Features</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                    <li><a href="{{ url('auth/login') }}">Sign Up</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="inner cover animation-element slide-right animation-text-block-1" >
-                    <h1 class="cover-heading">Business Messaging</h1>
-                    <p class="lead">Promote your business. Gain customers. Increase revenue.</p>
-                </div>
-
-                <div class="inner cover">
-                    <p class="lead">
-                        <a a href="#features" class="btn btn-lg btn-default main animation-element slide-left animation-button-1">Check it out!</a>
-                    </p>
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
     <!-- Columns of text -->
     <div class="container marketing" id="features">
 
