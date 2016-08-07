@@ -7,7 +7,6 @@
 
     <title>Business Messaging</title>
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -18,8 +17,6 @@
     <link type="text/css" rel="stylesheet" href="{{asset('/css/custom.css')}}"/>
     <script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script>
     <script type="text/javascript" src="{{URL::asset('/js/home.js')}}"></script>
-
-
 </head>
 
 <body  data-spy="scroll" data-target=".scrollspy" style="position:relative;">
@@ -27,15 +24,19 @@
 <div class="site-wrapper">
     <div class="site-wrapper-inner" id="home">
         <div class="cover-container">
-            <div class="masthead clearfix navbar-translucent" id="navbar">
+            <div class="masthead clearfix navbar-translucent " id="navbar">
                 <div class="inner">
-                    <h3 class="masthead-brand"><a href="#home">Twilio</a></h3>
                     <nav>
                         <div class="scrollspy">
                             <ul class="nav masthead-nav">
-                                <li class="active"><a href="#home">Home</a></li>
-                                <li><a href="#features">Features</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                @if(Request::is('/'))
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#features">Features</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                @endif
+                                @if(!Request::is('/'))
+                                        <li><a href="/">Home</a></li>
+                                @endif
                                 @if(auth()->guest())
                                     @if(!Request::is('auth/register'))
                                         <li><a href="{{ url('/auth/register') }}">Register</a></li>
@@ -59,22 +60,21 @@
 
             @if(Request::is('/'))
                 <link type="text/css" rel="stylesheet" href="{{asset('/css/cover.css')}}"/>
-                @include('../partials/coverNav')
-            @else
-                <link type="text/css" rel="stylesheet" href="{{asset('/css/registration.css')}}"/>
-                @include('../partials/registrationNav')
+                @yield('welcome')
 
+            @else
+                @yield('content')
+                <link type="text/css" rel="stylesheet" href="{{asset('/css/registration.css')}}"/>
                 <script type="text/javascript" src="{{URL::asset('/js/registration.js')}}"></script>
             @endif
+
         </div>
     </div>
 </div>
 
+@yield('welcomeContent')
 
-
-
-    @yield('content')
-
+@section('footer')
     <div class="site-wrapper">
 
         <div class="site-wrapper-inner">
@@ -89,6 +89,7 @@
             </div>
         </div>
     </div>
+@stop
 
 </body>
 </html>

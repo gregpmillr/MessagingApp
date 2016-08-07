@@ -55,7 +55,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-    padding: 30px;
+
 }
 
 
@@ -95,14 +95,6 @@ body {
     border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
-    .masthead-nav {
-        float: right;
-    }
-}
 
 
 /*
@@ -131,6 +123,8 @@ body {
 /*
  * Affix and center
  */
+
+
 
 @media (min-width: 768px) {
     /* Pull out the header and footer */

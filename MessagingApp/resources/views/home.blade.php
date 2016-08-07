@@ -1,4 +1,4 @@
-@extends('app')
+@extends('app.blade.php.bak')
 
 @section('content')
 <div class="container">

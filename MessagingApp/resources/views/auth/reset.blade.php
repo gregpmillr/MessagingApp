@@ -1,4 +1,4 @@
-@extends('app')
+@extends('partials/nav')
 
 @section('content')
 <div class="container-fluid">
