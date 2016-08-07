@@ -13,9 +13,13 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => "Greg",
+            'businessName' => "Twilio",
+            'preferredFName' => "Twilio",
+            'preferredLName' => "Falkenham",
+            'phoneNumber' => "902-555-1243",
+            'address' => "52 stoneridge court",
             'email' => "gregpmillr@gmail.com",
-            'password' => "Capslock2",
+            'password' => "secret",
         ]);
     }
 }

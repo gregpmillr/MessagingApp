@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Social_Profile;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -42,9 +43,13 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'businessName' => 'required',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
+            'fname' => 'required',
+            'lname' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
         ]);
     }
 
@@ -56,10 +61,26 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        //create user
+        //create social profile associated with user
+
+        $user = new User();
+        $user->businessName = $data['businessName'];
+        $user->preferredFName = $data['fname'];
+        $user->preferredLName = $data['lname'];
+        $user->phoneNumber = $data['phone'] ;
+        $user->address = $data['address'];
+        $user->email = $data['email'];
+        $user->password = bcrypt($data['password']);
+        $user->save();
+
+        $socialProfile = new Social_Profile();
+        $socialProfile->user_id = $user->id;
+        $socialProfile->twitter = $data['twitter'];
+        $socialProfile->facebook = $data['facebook'];
+        $socialProfile->googleplus = $data['gplus'];
+        $socialProfile->save();
+
+        return $user;
     }
 }

@@ -135,7 +135,7 @@
 
             <div class="row">
                 <div class="voffset6"></div>
-                <a href="#" class="btn-lg btn-success main">Get Started!</a>
+                <a href="{{ url('/auth/register') }}" class="btn-lg btn-success main">Get Started!</a>
             </div>
         </div>
 

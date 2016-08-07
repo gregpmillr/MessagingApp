@@ -2,22 +2,25 @@
 
 @section('content')
 
-    @if (count($errors) > 0)
-        <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+
 
     <div class="voffset7"></div>
 
     <div class="inner cover">
 
-        <form id="msform">
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        <form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}" id="msform">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <!-- progressbar -->
             <ul id="progressbar">
                 <li class="active">Account Setup</li>
@@ -28,9 +31,10 @@
             <fieldset>
                 <h2 class="fs-title">Create your account</h2>
                 <h3 class="fs-subtitle">This is step 1</h3>
+                <input type="text" name="businessName" placeholder="Business Name" />
                 <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="pass" placeholder="Password" />
-                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="password_confirmation" placeholder="Confirm Password" />
                 <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
@@ -50,7 +54,9 @@
                 <input type="text" name="phone" placeholder="Phone" />
                 <textarea name="address" placeholder="Address"></textarea>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                <input type="submit" name="submit" class="next action-button" value="Submit" />
+
+
             </fieldset>
         </form>
     </div>
