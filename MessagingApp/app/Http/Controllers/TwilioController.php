@@ -18,16 +18,19 @@ class TwilioController extends Controller
     {
         $this->sid = "AC84452b0842ec4a4ccac82994298db5c9";
         $this->token = "1c7b15119a35a2a1a7e74d2ba743ce37";
-        $client = new Services_Twilio($this->sid,$this->token);
     }
 
-    public function message()
+    public function message($body, $phoneNumber)
     {
+        $client = new Services_Twilio($this->sid,$this->token);
+        $textBody = $body;
+        $textPhoneNumber = $phoneNumber;
+
         try{
-            $message = $this->client->account->messages->sendMessage(
+            $message = $client->account->messages->sendMessage(
                 '2044001758', // From a valid Twilio number
-                '9022105887', // Text this number
-                "Hello monkey!"
+                $textPhoneNumber, // Text this number
+                $textBody
             );
         } catch(Services_Twilio_RestException $e){
             echo $e->getMessage();

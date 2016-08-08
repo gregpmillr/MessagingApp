@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Services_Twilio;
+use App\Http\Controllers\TwilioController;
 
 class AuthController extends Controller
 {
@@ -82,6 +83,9 @@ class AuthController extends Controller
         $socialProfile->facebook = $data['facebook'];
         $socialProfile->googleplus = $data['gplus'];
         $socialProfile->save();
+
+        $client = new TwilioController();
+        $client->message("Thank you for registering for our service!",$user->phoneNumber);
 
         return $user;
     }
