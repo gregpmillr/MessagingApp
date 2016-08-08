@@ -32,7 +32,7 @@
                                 @if(Request::is('/'))
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#features">Features</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="contact" data-toggle="modal" data-target="#contact">Contact</a></li>
                                 @endif
                                 @if(!Request::is('/'))
                                         <li><a href="/">Home</a></li>

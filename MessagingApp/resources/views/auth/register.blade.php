@@ -30,7 +30,7 @@
             <!-- fieldsets -->
             <fieldset>
                 <h2 class="fs-title">Create your account</h2>
-                <h3 class="fs-subtitle">This is step 1</h3>
+                <h3 class="fs-subtitle">You won't regret it.</h3>
                 <input type="text" name="businessName" placeholder="Business Name" />
                 <input type="text" name="email" placeholder="Email" />
                 <input type="password" name="password" placeholder="Password" />
