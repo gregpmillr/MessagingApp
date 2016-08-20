@@ -1,4 +1,4 @@
-@extends('app')
+@extends('partials/adminNav')
 
 @section('content')
 <div class="container">

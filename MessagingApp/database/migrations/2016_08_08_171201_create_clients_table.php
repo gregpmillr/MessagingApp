@@ -20,6 +20,7 @@ class CreateClientsTable extends Migration
             $table->integer('mailing_id')->unsigned();
             $table->timestamps();
             $table->foreign('mailing_id')->references('id')->on('mailing_list');
+            
         });
     }
 

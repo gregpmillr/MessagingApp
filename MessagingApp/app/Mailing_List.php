@@ -18,6 +18,7 @@ class Mailing_List extends Model
      * @var array
      */
     protected $fillable = [
+        'name',
     ];
 
 
