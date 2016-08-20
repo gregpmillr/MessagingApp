@@ -51,7 +51,7 @@
                 <h3 class="fs-subtitle">We will never sell it</h3>
                 <input type="text" name="fname" placeholder="First Name" />
                 <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="XXXXXXXXXX" />
+                <input type="text" name="phone" placeholder="Phone Number: XXXXXXXXXX" />
                 <textarea name="address" placeholder="Address"></textarea>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="submit" name="submit" class="next action-button" value="Submit" />
