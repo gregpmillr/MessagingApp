@@ -1,27 +1,63 @@
 @extends('partials/adminNav')
 
 @section('content')
-    <br>    <br>
-    <h1>{{$mailingList->name }}</h1>
+<br><br>
 
-    <article>
-        {{$mailingList->id}}
-    </article>
+    <div class="panel panel-default">
+        <div class="panel-heading text-center">
+            {{$mailingList->name }}
+        </div>
 
-    <a class="btn btn-danger" href="{{ URL::to('mailingList/' . $mailingList->id. '/edit') }}">Edit</a>
+        <div class="center-block pull-left">
+            {!! Form::open(['method' => 'DELETE', 'route' => ['mailingList.destroy', $mailingList->id]]) !!}
+            <br>
+            {!! Form::submit('Delete', ['class'=> 'btn btn-danger']) !!}
+            {!! Form::close() !!}
+        </div>
 
-    {!! Form::open(['method' => 'DELETE', 'route' => ['mailingList.destroy', $mailingList->id]]) !!}
-    <br>
-    {!! Form::submit('Delete', ['class'=> 'btn btn-danger']) !!}
-    {!! Form::close() !!}
 
-    @foreach ($clients as $client)
-        <article>
-            <h2>
-                <a href="{{action('ClientController@show',[$client->id])}}">{{$client->fName}},{{$client->lName}}, {{$client->phoneNumber}}</a>
-            </h2>
-        </article>
-    @endforeach
+        <div class="panel-body">
+            <table class="table table-striped">
+
+                    <!-- Table Headings -->
+                    <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Edit</th>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody>
+                    @foreach ($clients as $client)
+                        <tr>
+                            <!-- Task Name -->
+                            <td class="table-text">
+                                <div>{{ $client->fName }}</div>
+                            </td>
+
+                            <td>
+                                <div>{{ $client->lName }}</div>
+                            </td>
+
+                            <td class="table-text">
+                                <div>{{ $client->phoneNumber }}</div>
+                            </td>
+
+                            <td class="table-text">
+                                <a href="{{action('ClientController@show', [$client->id])}}">Update</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
 
 
 @stop
