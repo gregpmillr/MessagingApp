@@ -15,16 +15,14 @@
                     @foreach ($mailingLists as $list)
                         <article>
                             <h2>
-                                <a href="{{action('MailingListController@show',[$list->id])}}">{{$list->id}}</a>
+                                <a href="{{action('MailingListController@show',[$list->id])}}">{{$list->name}}</a>
                             </h2>
-
-                            <div class="body">{{$article->body}}</div>
                         </article>
                     @endforeach
-
                 @else
                     <h2>You have no mailing lists!</h2>
 
+                    <a class="btn btn-primary" href="{{action('MailingListController@create')}}">Add</a>
 
                 @endif
 

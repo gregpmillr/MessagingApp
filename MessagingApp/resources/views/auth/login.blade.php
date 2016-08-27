@@ -4,20 +4,20 @@
 
 <link type="text/css" rel="stylesheet" href="{{asset('/css/registration.css')}}"/>
 
-@if (count($errors) > 0)
-	<div class="alert alert-danger">
-		<strong>Whoops!</strong> There were some problems with your input.<br><br>
-		<ul>
-			@foreach ($errors->all() as $error)
-				<li>{{ $error }}</li>
-			@endforeach
-		</ul>
-	</div>
-@endif
-
 <div class="voffset9"></div>
 
 <div class="inner cover">
+
+	@if (count($errors) > 0)
+		<div class="alert alert-danger">
+			<strong>Whoops!</strong> There were some problems with your input.<br><br>
+			<ul>
+				@foreach ($errors->all() as $error)
+					<li>{{ $error }}</li>
+				@endforeach
+			</ul>
+		</div>
+	@endif
 
 	<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login')  }}" id="msform">
 		<!-- fieldsets -->

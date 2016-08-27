@@ -56,7 +56,7 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'database'  => 'messaging',
-            'username'  => 'root',
+            'username'  => 'greg',
             'password'  => 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',

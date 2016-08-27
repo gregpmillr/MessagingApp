@@ -27,7 +27,7 @@ class Client extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user()
+    public function mailingList()
     {
         return $this->belongsTo('App\Mailing_list', 'mailing_id');
     }

@@ -21,3 +21,4 @@ Route::controllers([
 ]);
 
 Route::resource('mailingList', 'MailingListController');
+Route::resource('client', 'ClientController');

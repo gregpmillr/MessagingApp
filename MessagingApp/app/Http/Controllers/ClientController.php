@@ -3,22 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Mailing_List;
-use App\Client;
 
-class MailingListController extends Controller
+class ClientController extends Controller
 {
-    public $mailID = null;
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
     /**
      * Display a listing of the resource.
      *
@@ -26,9 +16,7 @@ class MailingListController extends Controller
      */
     public function index()
     {
-
-        $mailingLists = Mailing_List::where('id',auth()->user()->id)->get();
-        return view("mailingList.index", compact('mailingLists'));
+        //
     }
 
     /**
@@ -38,7 +26,7 @@ class MailingListController extends Controller
      */
     public function create()
     {
-        return view("mailingList.create");
+        //
     }
 
     /**
@@ -49,11 +37,7 @@ class MailingListController extends Controller
      */
     public function store(Request $request)
     {
-        $mailingList = new Mailing_List($request->all());
-
-        Auth::User()->mailingLists()->save($mailingList);
-
-        return redirect('mailingList');
+        //
     }
 
     /**
@@ -64,15 +48,7 @@ class MailingListController extends Controller
      */
     public function show($id)
     {
-        $this->mailID = $id;
-        $mailingList = Mailing_List::where('id',$this->mailID)->first();
-
-        $clients = Client::with(['mailingList' => function ($query) {
-            $query->where('id', $this->mailID);
-
-        }])->get();
-
-        return view ('mailingList.show', compact('mailingList', 'clients'));
+        //
     }
 
     /**
