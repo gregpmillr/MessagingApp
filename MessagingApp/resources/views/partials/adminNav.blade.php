@@ -33,7 +33,9 @@
 <body>
 
 <div id="wrapper">
-
+    <button href="#menu-toggle" type="button" class="btn btn-default visible-xs" aria-label="Left Align" id="menu-toggle">
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+    </button>
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">

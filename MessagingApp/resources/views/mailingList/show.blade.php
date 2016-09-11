@@ -5,17 +5,25 @@
 <br><br>
 
     <div class="panel panel-default">
-        <div class="panel-heading text-center">
-            {{$mailingList->name }}
-        </div>
+            <div class="panel-heading text-center">
+                {{$mailingList->name }}
+            </div>
 
-        <div class="center-block pull-left">
-            {!! Form::open(['method' => 'DELETE', 'route' => ['mailingList.destroy', $mailingList->id]]) !!}
-            <br>
-            {!! Form::submit('Delete', ['class'=> 'btn btn-danger']) !!}
-            {!! Form::close() !!}
-        </div>
+            <div class="container-fluid">
+                    <br>
+                    {!! Form::open(['method' => 'DELETE', 'route' => ['mailingList.destroy', $mailingList->id]]) !!}
+                    {!! Form::submit('Delete Mailing List', ['class'=> 'btn btn-danger']) !!}
+                    {!! Form::close() !!}
+                    <br>
+            </div>
 
+            <div class="container-fluid">
+                <div class="row">
+                    {!! Form::model($client = new App\Client, ['url' => 'client']) !!}
+                    @include ('client.form', ['submitButtonText' => 'Add Client'], ['mailingID' => $mailingList->id])
+                    {!! Form::close() !!}
+                </div>
+            </div>
 
         <div class="panel-body">
             <table class="table table-striped">

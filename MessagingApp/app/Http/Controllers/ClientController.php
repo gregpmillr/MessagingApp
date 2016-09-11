@@ -3,12 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Client;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class ClientController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+    
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +33,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -37,7 +44,9 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $client = new Client($request->all());
+        $client->save();
+        return redirect('mailingList');
     }
 
     /**

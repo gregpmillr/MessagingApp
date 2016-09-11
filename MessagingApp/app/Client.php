@@ -21,6 +21,7 @@ class Client extends Model
         'fName',
         'lName',
         'phoneNumber',
+        'mailing_id',
     ];
 
 

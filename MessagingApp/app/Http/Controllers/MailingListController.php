@@ -26,8 +26,7 @@ class MailingListController extends Controller
      */
     public function index()
     {
-
-        $mailingLists = Mailing_List::where('id',auth()->user()->id)->get();
+        $mailingLists = Mailing_List::where('user_id',auth()->user()->id)->get();
         return view("mailingList.index", compact('mailingLists'));
     }
 
@@ -67,10 +66,7 @@ class MailingListController extends Controller
         $this->mailID = $id;
         $mailingList = Mailing_List::where('id',$this->mailID)->first();
 
-        $clients = Client::with(['mailingList' => function ($query) {
-            $query->where('id', $this->mailID);
-
-        }])->get();
+        $clients = Client::where('mailing_id', $this->mailID)->get();
 
         return view ('mailingList.show', compact('mailingList', 'clients'));
     }
@@ -106,6 +102,8 @@ class MailingListController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Mailing_List::destroy($id);
+        return redirect('mailingList');
+
     }
 }
