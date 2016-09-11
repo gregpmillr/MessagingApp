@@ -12,7 +12,7 @@
                 <h1>Create New Mailing List</h1><br>
 
                 {!! Form::model($mailingList = new App\Mailing_List, ['url' => 'mailingList']) !!}
-                @include ('mailingList.form', ['submitButtonText' => 'Add Article'])
+                @include ('mailingList.form', ['submitButtonText' => 'Add Mailing List'])
                 {!! Form::close() !!}
 
 

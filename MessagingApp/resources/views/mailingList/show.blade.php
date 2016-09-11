@@ -4,10 +4,6 @@
     <br>    <br>
     <h1>{{$mailingList->name }}</h1>
 
-    <article>
-        {{$mailingList->id}}
-    </article>
-
     <a class="btn btn-danger" href="{{ URL::to('mailingList/' . $mailingList->id. '/edit') }}">Edit</a>
 
     {!! Form::open(['method' => 'DELETE', 'route' => ['mailingList.destroy', $mailingList->id]]) !!}
