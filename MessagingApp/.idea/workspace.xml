@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f41a4c3-a02e-42d7-9e0b-285596eb5d7c" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mailingList/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/mailingList/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mailingList/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/mailingList/show.blade.php" />
     </list>
@@ -52,8 +56,13 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/mailingList/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="60">
               <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+=======
+            <state relative-caret-position="120">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
               <folding />
             </state>
           </provider>
@@ -73,6 +82,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/mailingList/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
+<<<<<<< HEAD
               <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
@@ -84,6 +94,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+=======
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
               <folding />
             </state>
           </provider>
@@ -549,7 +562,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="89414000" />
+=======
+    <option name="totallyTimeSpent" value="91002000" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -802,22 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mailingList/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/adminNav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -875,18 +876,48 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/mailingList/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/mailingList/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/mailingList/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mailingList/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mailingList/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
           <folding />
         </state>
       </provider>
@@ -901,8 +932,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mailingList/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="60">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+=======
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+>>>>>>> 33bb3ac707bf71abeb0b784aa7a6ef0230f147f0
           <folding />
         </state>
       </provider>

@@ -15,8 +15,6 @@
                 @include ('mailingList.form', ['submitButtonText' => 'Add Mailing List'])
                 {!! Form::close() !!}
 
-
-
             </div>
         </div>
     </div>
